@@ -1,0 +1,234 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+
+font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    width: 100%;
+    background-image: url(images/pexels-min-an-1482803.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  color: whitesmoke;
+}
+
+.navbar .hamburger{
+    display: none;
+}
+.navbar img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  transition: 0.4s;
+  cursor: pointer;
+}
+.navbar ul li:hover {
+  color: #ff523b;
+}
+
+
+@media(max-width:600px){
+    .navbar ul{
+        display: none;
+    }
+  .navbar .hamburger{
+    display: block;
+    height: 1px;
+    background: black;
+  }
+  .navbar .hamburger div{
+    background-color: navajowhite;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+  }
+}
+
+.heroPage {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: navajowhite;
+  padding: 20px 0;
+
+}
+.heroPage img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+.heroPage h1 {
+  font-size: 60px;
+}
+
+.heroPage a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.5s;
+  font-size: 35px;
+}
+
+.heroPage a:hover {
+  color: navajowhite;
+}
+
+.heroPage h5 {
+  color: navajowhite;
+  text-align: center;
+  font-size: 25px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media(max-width:814px){
+    .heroPage h5{
+        padding: 0 50px;
+    }
+}
+.billSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: whitesmoke;
+    gap: 50px;
+    padding-top: 50px;
+}
+.billSection #heading{
+    font-size: 40px;
+    color: #1ab0b3;
+}
+.billSection .details h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 150px;
+}
+.billSection .details{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    color: navajowhite;
+}
+
+.billSection .details input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+
+.billSection  button{
+    padding: 10px 150px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: navajowhite;
+    transition: 0.7s;
+    border: none;
+    cursor: pointer;
+}
+
+.billSection button:hover{
+    background-color: #ff523b;
+}
+
+footer{
+    background-color: black;
+}
+footer .footerCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 90px;
+}
+
+footer .footerCards .cards{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .cards #logo{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+footer .footerCards .cards .downloadDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerCards .cards .downloadDetails a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.7s;
+}
+footer .footerCards .cards .downloadDetails a:hover{
+    color: #ff523b;
+}
+footer .footerCards .cards h2, footer .footerCards .cards .purpose p{
+    text-align: center;
+}
+footer .footerCards .cards .purpose p span{
+    display: block;
+}
+.footerCards .cards .social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerCards .cards .social .socialMedia{
+    display: flex;
+    gap: 20px;
+}
+
+footer .footerCards .cards .social .socialMedia img{
+   width: 25px;
+   height: 25px;
+}
+@media(max-width:1200px){
+    footer .footerCards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
